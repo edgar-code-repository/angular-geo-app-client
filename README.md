@@ -34,6 +34,6 @@ Pantalla principal de CRUD de ciudades:
 
 --------------------------------------------------------------------------------------------------------------------
 
-Git repository:  https://bitbucket.org/brightdog/angular_geo_app_client
+Git repository:  https://github.com/edgar-code-repository/angular-geo-app-client
 
 
