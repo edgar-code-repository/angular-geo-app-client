@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="row" *ngIf="flagError">
+      <p> {{ errorMesage }} </p>
+      <br/>
+      <input type="button" value="Main" class="btn btn-primary" [routerLink]="['']" /> 
+  </div>
+
+  <div class="row" *ngIf="!flagError">
+      <div class="panel panel-success">
+          <div class="panel-heading">
+              Cities
+          </div>
+          <div class="panel-body">
+              <input type="hidden" id="country_filter" value=""/>
+          
+              <table class="table">
+                  <thead>
+                      <tr>
+                          <th>Name</th>
+                          <th>Country</th>
+                          <th>Edit</th>
+                          <th>Delete</th>
+                      </tr>
+                  </thead>
+                  <tbody *ngIf="flagCities">
+                      <tr *ngFor="let city of citiesList">
+                          <td>{{ city.name }}</td>
+                          <td>{{ city.country.name }}</td>
+                          <td>
+                              <input type="button" value="Edit" class="btn btn-warning" (click)="editCity(city.id)"  />
+                          </td>
+                          <td>
+                              <input type="button" value="Delete" class="btn btn-danger" (click)="deleteCity(city.id)"  />
+                          </td>
+                      </tr>
+                  </tbody> 
+                  <tbody *ngIf="!flagCities"> 
+                      <tr>
+                          <td colspan="4"> {{ message }} </td>
+                      </tr>               
+                  </tbody>
+              </table>
+                  
+              <br/>
+              <input type="button" value="Add" class="btn btn-primary" [routerLink]="['/addCity']" />&nbsp;
+              <input type="button" value="Continents" class="btn btn-primary" [routerLink]="['/continents']" />&nbsp;
+              <input type="button" value="Countries" class="btn btn-primary" [routerLink]="['/countries']" />&nbsp;
+              <input type="button" value="Main" class="btn btn-primary" [routerLink]="['']" />                    
+
+          </div>
+      </div> 
+  </div>   
+</div>

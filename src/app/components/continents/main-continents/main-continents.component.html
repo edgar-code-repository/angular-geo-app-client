@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="row" *ngIf="flagError">
+    <p> {{ errorMesage }} </p>
+    <br/>
+    <input type="button" value="Main" class="btn btn-primary" [routerLink]="['']" /> 
+  </div>
+
+  <div class="row" *ngIf="!flagError">
+    <div class="panel panel-success">
+        <div class="panel-heading">Continents</div>
+        <div class="panel-body">
+            <div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody *ngIf="flagContinents">
+                        <tr *ngFor="let continent of continentsList">
+                            <td>{{ continent.name }}</td>
+                            <td>
+                                <input type="button" value="Edit" class="btn btn-warning" (click)="editContinent(continent.id)" />
+                            </td>
+                            <td>
+                                <input type="button" value="Delete" class="btn btn-danger" (click)="deleteContinent(continent.id)"  />
+                            </td>
+                        </tr>              
+                    </tbody>
+                    <tbody *ngIf="!flagContinents"> 
+                        <tr>
+                            <td colspan="3"> {{ message }} </td>
+                        </tr>               
+                    </tbody>
+                </table>
+                    
+                <br/>
+                <input type="button" value="Add" class="btn btn-primary" [routerLink]="['/addContinent']" />&nbsp;
+                <input type="button" value="Countries" class="btn btn-primary" [routerLink]="['/countries']" />&nbsp;
+                <input type="button" value="Cities" class="btn btn-primary" [routerLink]="['/cities']" />&nbsp;
+                <input type="button" value="Main" class="btn btn-primary" [routerLink]="['']" />                    
+
+            </div>
+        </div>
+  </div>
+</div>

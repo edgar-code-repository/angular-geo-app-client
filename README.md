@@ -1,27 +1,39 @@
-# AngularGeoAppClient
+THE (ANGULAR) GEO APP CLIENT
+--------------------------------------------------------------------------------------------------------------------
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.1.
+Aplicación SPA desarrollada con Angular 8 que almacena información de continentes, países y ciudades.
 
-## Development server
+La aplicación utiliza el HttpClientModule para conectarse a una API Rest desarrollada con Spring Boot 
+y que permite almacenar la información en MongoDB: 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+https://brightdog@bitbucket.org/brightdog/spring-boot-rest-geo-api
 
-## Code scaffolding
+--------------------------------------------------------------------------------------------------------------------
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Pantalla principal:
 
-## Build
+![Screenshot Main](screenshots/angular_main_page.png)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+--------------------------------------------------------------------------------------------------------------------
 
-## Running unit tests
+Pantalla principal de CRUD de continentes:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![Screenshot Continents](screenshots/angular_main_continents.png)
 
-## Running end-to-end tests
+--------------------------------------------------------------------------------------------------------------------
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Pantalla principal de CRUD de paises:
 
-## Further help
+![Screenshot Countries](screenshots/angular_main_countries.png)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+--------------------------------------------------------------------------------------------------------------------
+
+Pantalla principal de CRUD de ciudades:
+
+![Screenshot Cities](screenshots/angular_main_cities.png)
+
+--------------------------------------------------------------------------------------------------------------------
+
+Git repository:  https://bitbucket.org/brightdog/angular_geo_app_client
+
+
