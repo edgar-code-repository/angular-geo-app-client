@@ -32,8 +32,5 @@ Pantalla principal de CRUD de ciudades:
 
 ![Screenshot Cities](screenshots/angular_main_cities.png)
 
---------------------------------------------------------------------------------------------------------------------
-
-Git repository:  https://github.com/edgar-code-repository/angular-geo-app-client
 
 
