@@ -13,7 +13,7 @@ export class AddContinentComponent implements OnInit {
   flagError: boolean = false;
   errorMessage: string;
   newContinent: Continent = {
-    "id": "",
+    "id": null,
     "name": ""
   };
 

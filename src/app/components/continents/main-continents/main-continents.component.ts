@@ -51,6 +51,7 @@ export class MainContinentsComponent implements OnInit {
   }
 
   deleteContinent(continentId: string) {
+    console.log("deleteContinent - Continent Id: " + continentId);
     const message = "Are you sure you want to delete selected continent?";
     if (confirm(message)) {
       let observableDeleteContinent = this.continentsService.deleteContinent(continentId);
