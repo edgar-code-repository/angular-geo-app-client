@@ -1,10 +1,9 @@
-THE (ANGULAR) GEO APP CLIENT
+THE GEO APP CLIENT (ANGULAR 8)
 --------------------------------------------------------------------------------------------------------------------
 
-Aplicación SPA desarrollada con Angular 8 que almacena información de continentes, países y ciudades.
+Angular application that shows information about continents, countries and cities.
 
-La aplicación utiliza el HttpClientModule para conectarse a una API Rest desarrollada con Spring Boot 
-y que permite almacenar la información en MongoDB: 
+This app uses a Rest API as backend to retrieve info: 
 
 **THE GEO REST API (SPRING BOOT)**
 
@@ -12,27 +11,17 @@ https://github.com/edgar-code-repository/spring-boot-rest-geo-api
 
 --------------------------------------------------------------------------------------------------------------------
 
-Pantalla principal:
+Main screen:
 
-![Screenshot Main](screenshots/angular_main_page.png)
-
---------------------------------------------------------------------------------------------------------------------
-
-Pantalla principal de CRUD de continentes:
-
-![Screenshot Continents](screenshots/angular_main_continents.png)
+![Screenshot Main](screenshots/main-screen.png)
 
 --------------------------------------------------------------------------------------------------------------------
 
-Pantalla principal de CRUD de paises:
+Continents:
 
-![Screenshot Countries](screenshots/angular_main_countries.png)
+![Screenshot Continents](screenshots/continents.png)
 
 --------------------------------------------------------------------------------------------------------------------
-
-Pantalla principal de CRUD de ciudades:
-
-![Screenshot Cities](screenshots/angular_main_cities.png)
 
 
 
