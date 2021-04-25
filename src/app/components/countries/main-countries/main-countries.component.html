@@ -17,6 +17,7 @@
                   <thead>
                       <tr>
                           <th>Name</th>
+                          <th>Capital</th>
                           <th>Continent</th>
                           <th>Edit</th>
                           <th>Delete</th>
@@ -25,6 +26,7 @@
                   <tbody *ngIf="flagCountries">
                       <tr *ngFor="let country of countriesList">
                           <td>{{ country.name }}</td>
+                          <td>{{ country.capital }}</td>
                           <td>{{ country.continent.name }}</td>
                           <td>
                               <input type="button" value="Edit" class="btn btn-warning" (click)="editCountry(country.id)"  />
@@ -36,7 +38,7 @@
                   </tbody>  
                   <tbody *ngIf="!flagCountries"> 
                       <tr>
-                          <td colspan="4"> {{ message }} </td>
+                          <td colspan="5"> {{ message }} </td>
                       </tr>               
                   </tbody>             
               </table>
